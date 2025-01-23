@@ -43,6 +43,7 @@ const Home = () => {
                 <ProductCard key={product.id} product={product}/>
             ))}
         </div>
+        <h1>End of Home</h1>
     </div>
   )
 }
