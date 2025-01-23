@@ -46,16 +46,16 @@ jobs: # A job is a set of steps that GitHub Actions will perform.
 
       # Step 2: Set up Node.js
       - name: Set up Node.js
-          uses: actions/setup-node@v3
-          with:
-              node-version: '20'
+        uses: actions/setup-node@v3
+        with:
+            node-version: '20'
 
       # Step 3: Install dependencies
       - name: Install dependencies
-          run: npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps
 
       # Step 4: Deploy to Vercel (or another platform)
       - name: Deploy to Vercel
-          run: |
-          npm install -g vercel
-          vercel --prod --yes --token ${{ secrets.ECOM_TOKEN }}
+        run: |
+        npm install -g vercel
+        vercel --prod --yes --token ${{ secrets.ECOM_TOKEN }}
