@@ -57,5 +57,5 @@ jobs: # A job is a set of steps that GitHub Actions will perform.
       # Step 4: Deploy to Vercel (or another platform)
       - name: Deploy to Vercel
         run: |
-        npm install -g vercel
-        vercel --prod --yes --token ${{ secrets.ECOM_TOKEN }}
+          npm install -g vercel
+          vercel --prod --yes --token ${{ secrets.ECOM_TOKEN }}
